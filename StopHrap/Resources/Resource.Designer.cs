@@ -41,11 +41,93 @@ namespace StopHrap
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f040004
+			public const int btnDefaulSettings = 2130968580;
+			
+			// aapt resource value: 0x7f040011
+			public const int btnLoadProfile = 2130968593;
+			
+			// aapt resource value: 0x7f040013
+			public const int btnRecordCalmSound = 2130968595;
+			
+			// aapt resource value: 0x7f040012
+			public const int btnRecordProfile = 2130968594;
+			
+			// aapt resource value: 0x7f040014
+			public const int btnSaveSettings = 2130968596;
+			
+			// aapt resource value: 0x7f040000
+			public const int btnSettings = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int btnStatistic = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int linearLayout1 = 2130968579;
+			
+			// aapt resource value: 0x7f040002
+			public const int tgglBntStartOff = 2130968578;
+			
+			// aapt resource value: 0x7f040006
+			public const int txtEditCompareCoef = 2130968582;
+			
+			// aapt resource value: 0x7f040010
+			public const int txtEditCorrelationCoefficient = 2130968592;
+			
+			// aapt resource value: 0x7f04000e
+			public const int txtEditCounterCooldownTime = 2130968590;
+			
+			// aapt resource value: 0x7f040008
+			public const int txtEditOpenThreshold = 2130968584;
+			
+			// aapt resource value: 0x7f04000c
+			public const int txtEditSnoreCount = 2130968588;
+			
+			// aapt resource value: 0x7f04000a
+			public const int txtEditSoundThreshold = 2130968586;
+			
+			// aapt resource value: 0x7f040005
+			public const int txtViewCompareCoef = 2130968581;
+			
+			// aapt resource value: 0x7f04000f
+			public const int txtViewCorrelationCoefficient = 2130968591;
+			
+			// aapt resource value: 0x7f04000d
+			public const int txtViewCounterCooldownTime = 2130968589;
+			
+			// aapt resource value: 0x7f040007
+			public const int txtViewOpenThreshold = 2130968583;
+			
+			// aapt resource value: 0x7f04000b
+			public const int txtViewSnoreCount = 2130968587;
+			
+			// aapt resource value: 0x7f040009
+			public const int txtViewSoundThreshold = 2130968585;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
 			// aapt resource value: 0x7f020000
 			public const int Main = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int SettingsLayout = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int StatisticLayout = 2130837506;
 			
 			static Layout()
 			{

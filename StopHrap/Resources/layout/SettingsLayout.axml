@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1">
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <Button
+          android:text="По умолчанию"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnDefaulSettings" />
+      <TextView
+          android:text="Коэффициент сравнения"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtViewCompareCoef" />
+      <EditText
+          android:inputType="numberDecimal"
+          android:text="1.0"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtEditCompareCoef" />
+      <TextView
+          android:text="Порог открытия"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtViewOpenThreshold" />
+      <EditText
+          android:inputType="numberDecimal"
+          android:text="0.0"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtEditOpenThreshold" />
+      <TextView
+          android:text="Порог шума"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtViewSoundThreshold" />
+      <EditText
+          android:inputType="numberDecimal"
+          android:text="0.0"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtEditSoundThreshold" />
+      <TextView
+          android:text="Кол-во всхрапов"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtViewSnoreCount" />
+      <EditText
+          android:inputType="numberSigned"
+          android:text="3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtEditSnoreCount" />
+      <TextView
+          android:text="Cooldown счётчика(сек)"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtViewCounterCooldownTime" />
+      <EditText
+          android:inputType="numberSigned"
+          android:text="5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtEditCounterCooldownTime" />
+      <TextView
+          android:text="Коэффициент кореляции"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtViewCorrelationCoefficient" />
+      <EditText
+          android:inputType="numberDecimal"
+          android:text="0.3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtEditCorrelationCoefficient" />
+      <Button
+          android:text="Загрузить профиль"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnLoadProfile" />
+      <Button
+          android:text="Записать профиль"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnRecordProfile" />
+      <Button
+          android:text="Успокаивающий звук"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnRecordCalmSound" />
+      <Button
+          android:text="Сохранить"
+          android:textColor="@android:color/holo_green_light"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnSaveSettings" />
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>
