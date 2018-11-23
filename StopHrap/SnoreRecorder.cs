@@ -31,6 +31,7 @@ namespace SnoreRecorder
 
         public void StopRecording()
         {
+            //
             if (isRecording)
             {
                 isRecording = false;
