@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Widget;
 using StopHrap.Resources.DataHelper;
@@ -48,16 +49,30 @@ namespace StopHrap
         {
             /*Initialise data*/
             db = new DataBase();
-            
-            defaultSettingsModel = new SettingsModel()
-            {
-                CompareCoef = decimal.Parse(Resources.GetString(Resource.String.default_CompareCoef)),
-                OpenThreshold = decimal.Parse(Resources.GetString(Resource.String.default_OpenThreshold)),
-                SoundThreshold = decimal.Parse(Resources.GetString(Resource.String.default_SoundThreshold)),
-                SnoreCount = int.Parse(Resources.GetString(Resource.String.default_SnoreCount)),
-                CounterCooldownTime = int.Parse(Resources.GetString(Resource.String.default_CounterCooldownTime)),
-                CorrelationCoefficient = decimal.Parse(Resources.GetString(Resource.String.default_CorrelationCoefficient))
-            };
+            defaultSettingsModel = new SettingsModel();
+
+            decimal dtmp;
+            int itmp;
+
+            decimal.TryParse(Resources.GetString(Resource.String.default_CompareCoef), out dtmp);
+            defaultSettingsModel.CompareCoef = dtmp;
+
+            decimal.TryParse(Resources.GetString(Resource.String.default_CorrelationCoefficient), out dtmp);
+            defaultSettingsModel.CorrelationCoefficient = dtmp;
+
+            decimal.TryParse(Resources.GetString(Resource.String.default_SoundThreshold), out dtmp);
+            defaultSettingsModel.SoundThreshold = dtmp;
+
+            int.TryParse(Resources.GetString(Resource.String.default_CounterCooldownTime), out itmp);
+            defaultSettingsModel.CounterCooldownTime = itmp;
+
+            decimal.TryParse(Resources.GetString(Resource.String.default_OpenThreshold), out dtmp);
+            defaultSettingsModel.OpenThreshold = dtmp;
+
+            int.TryParse(Resources.GetString(Resource.String.default_SnoreCount), out itmp);
+
+            defaultSettingsModel.SnoreCount = itmp;
+ 
             db.CreateDataBase(defaultSettingsModel);
 
             /*Data section*/
@@ -116,7 +131,8 @@ namespace StopHrap
 
         private void BtnRecordCalmSound_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Intent settingsLayout = new Intent(this, typeof(CalmSoundSettingsActivity));
+            StartActivity(settingsLayout);
         }
 
         private void BtnRecordProfile_Click(object sender, EventArgs e)
