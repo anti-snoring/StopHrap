@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">StopHrap</string>
+  <string name="default_CompareCoef">1.0</string>
+  <string name="default_OpenThreshold">0.0</string>
+  <string name="default_SoundThreshold">0.0</string>
+  <string name="default_SnoreCount">3</string>
+  <string name="default_CounterCooldownTime">5</string>
+  <string name="default_CorrelationCoefficient">0.3</string>
 </resources>

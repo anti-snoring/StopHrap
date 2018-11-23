@@ -3,25 +3,30 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 
+
 namespace StopHrap
 {
     [Activity(Label = "Стоп храп", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
             Initialise();
+
         }
 
         private void Initialise()
         {
+            /*Buttons section*/
             var btnSettings = FindViewById<Button>(Resource.Id.btnSettings);
             var btnStatistic = FindViewById<Button>(Resource.Id.btnStatistic);
             var tgglBntStartOff = FindViewById<ToggleButton>(Resource.Id.tgglBntStartOff);
 
+            /*Events section*/
             btnSettings.Click += BtnSettings_Click;
             btnStatistic.Click += BtnStatistic_Click;
             tgglBntStartOff.CheckedChange += TgglBntStartOff_CheckedChange;
